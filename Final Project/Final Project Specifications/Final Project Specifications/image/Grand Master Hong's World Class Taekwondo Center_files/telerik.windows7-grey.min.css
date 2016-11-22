@@ -1,0 +1,90 @@
+.t-widget{border-width:0;/*border-color:#6c6c6c;background-color:#FFFFFF;*/}
+.t-header,.t-grid-header{/*border-color:#6c6c6c;background:#F1F1F1;font-weight: bold;*/}
+.t-icon{background:transparent url('Windows7/sprite.png') no-repeat;}
+.t-expand{background-position:0 -160px;}
+.t-collapse{background-position:0 -176px;}
+.t-plus,.t-plus-disabled{background-position:0 -256px;}
+.t-minus,.t-minus-disabled{background-position:-16px -256px;}
+.t-arrow-up{background-position:-16px -160px;}
+.t-arrow-down{background-position:-16px -176px;}
+.t-header .t-arrow-up,.t-state-hover .t-arrow-up{background-position:-48px -160px;}
+.t-header .t-arrow-down,.t-state-hover .t-arrow-down{background-position:-48px -176px;}
+.t-state-disabled .t-arrow-up{background-position:-32px -160px;}
+.t-state-disabled .t-arrow-down{background-position:-32px -176px;}
+.t-numerictextbox .t-arrow-up{background-position:-16px -162px;}
+.t-numerictextbox .t-arrow-down{background-position:-16px -178px;}
+.t-arrow-up-small{background-position:0 -304px;}
+.t-arrow-down-small{background-position:-16px -304px;}
+.t-arrow-first{background-position:0 -192px;}
+.t-arrow-prev{background-position:-16px -192px;}
+.t-arrow-next{background-position:-32px -192px;}
+.t-arrow-last{background-position:-48px -192px;}
+.t-header .t-arrow-first,.t-state-hover .t-arrow-first{background-position:0 -224px;}
+.t-header .t-arrow-prev,.t-state-hover .t-arrow-prev{background-position:-16px -224px;}
+.t-header .t-arrow-next,.t-state-hover .t-arrow-next{background-position:-32px -224px;}
+.t-header .t-arrow-last,.t-state-hover .t-arrow-last{background-position:-48px -224px;}
+.t-state-disabled .t-arrow-first{background-position:0 -208px;}
+.t-state-disabled .t-arrow-prev{background-position:-16px -208px;}
+.t-state-disabled .t-arrow-next{background-position:-32px -208px;}
+.t-state-disabled .t-arrow-last{background-position:-48px -208px;}
+.t-filter{background-position:0 -240px;}
+.t-clear-filter{background-position:-16px -240px;}
+.t-refresh{background-position:-32px -240px;}
+.t-icon-calendar{background-position:-48px -240px;}
+.t-delete{background-position:0 -288px;}
+.t-insert-top{background-position:0 -320px;}
+.t-insert-middle{background-position:-16px -320px;}
+.t-insert-bottom{background-position:-32px -320px;}
+.t-add{background-position:-48px -320px;}
+.t-denied{background-position:-64px -320px;}
+.t-loading,.t-widget .t-loading{background:transparent url('Windows7/loading.gif') no-repeat 0 0;}
+.t-widget,.t-link{/*color:#000;*/}
+.t-header,.t-header .t-link{/*color:#6c6c6c;font-weight: bold;*/font-size:95%;}
+.t-header .t-group,.t-group .t-link{/*color:#333;*/}
+.t-group,.t-content{/*border-color:#6C6C6C;background-color:#FFFFFF;*/}
+.t-alt{/*background-color:#FFFFFF;*/}
+.t-state-default{/*border-color:#6C6C6C;*/}
+.t-active-filter{/*background-color:#c3dcfa;*/}
+.t-state-hover{/*background-color:#F1F1F1;border-color:#6C6C6C;*/}
+.t-state-hover,.t-state-hover .t-link,.t-header .t-state-hover,.t-group .t-state-hover{/*color:#000;*/}
+.t-state-active{/*background-color:#fff;border-color:#6C6C6C;*/}
+.t-state-selected{/*background-color:#DAE2E8;*/}
+.t-state-error{border-style:ridge;/*border-color:#6C6C6C;background-color:#ffc0cb;*/}
+.t-state-disabled,.t-state-disabled .t-link{/*color:#888;*/}
+.t-grid-toolbar,.t-grouping-header,.t-widget .t-footer,.t-grid-footer,.t-widget .t-status{/*border-color:#FFFFFF;background-color:#F1F1F1;*/}
+.t-button{background:/*#e8e8e8*/ url('Windows7/sprite.png') repeat-x 0 -96px;/*color:#0d202b;border-color:#6C6C6C;*/}
+.t-button-hover{background-position:0 -128px;/*color:#0e3d4f;border-color:#6C6C6C;*/}
+.t-panelbar .t-link{/*border-color:#6C6C6C;*/}
+.t-tabstrip .t-item{/*border-bottom-color:#426682;*/}
+.t-tabstrip li.t-state-active{/*border-bottom-color:#fff;*/}
+.t-grid td{border-left:0 none;border-right:0 none/*#dae2e8*/;border-bottom:1px solid inherit/*#dae2e8*/;font-size:90%;}
+.t-grid .t-grouping-row{/*background:#fff;*/}
+.t-grouping-header .t-group-indicator{/*color:#333;border-color:#ccc;*/}
+.t-grouping-dropclue{background:url('Windows7/sprite.png') no-repeat -48px -288px;}
+.t-grouping-row .t-groupcell,.t-grouping-row p{/*background:#fff;*/}
+.t-grouping-row p { margin-left: 0; padding: 0 0; }
+.t-treeview .t-drop-clue{background-image:url('Windows7/sprite.png');background-position:0 -342px;}
+.t-treeview .t-state-selected{/*border-color:#6C6C6C;*/}
+.t-panelbar .t-state-hover{background-image:none;}
+.t-calendar th{/*border-color:#6C6C6C;*/}
+.t-other-month .t-link{/*color:#a7a7a7;*/}
+.t-footer {/*color: #6C6C6C;*/}
+.t-footer a{/*color: #6C6C6C;*/}
+.t-grid-content{margin-bottom:0px;overflow-x:auto;overflow-y:scroll;} /* Only way to fix scroll bar issue is to always show the scrollbar! */
+.t-grouping-header{display:none;}.t-grouping-dropclue{display:none;}
+.t-grid .t-header, div.t-grid .t-last-header{padding:.3em 7px;border-width:0 0 0 0;border-style:solid;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.t-grid-header{padding-right:17px;zoom:1;border-bottom-width:0px;border-bottom-style:solid;}
+.t-menu .t-item  {border-style:none /*!important*/;border:0px;border-width:0px;}
+.t-header, .t-grid-header{background:none /*!important*/;}
+.t-grid td, .t-grid .t-last {border-bottom-style: solid;border-bottom-width: 1px;font-size: 90%;}
+.t-grid img {vertical-align:middle;}
+/*div.t-grid-header{border-bottom-width:0px;}*/
+.t-link{/*color:gray !important;*/}
+.t-widget{/*border-color:white !important;*/}
+.t-item{/*border-color:white !important;*/}
+.t-menu .t-link  {padding-left:2px; } 
+.t-menu .t-group{/*border:1px solid #E2E2E2; */left:-1px;position:absolute;top:32px;}
+.t-state-selected{/*background-color:Transparent;*/}
+.t-pager .t-dropdown.t-header { padding: 0; width: 56px !important }
+.t-grid-pager { height: 26px; }
+.t-grid-header-wrap { border-right: 0 none; }

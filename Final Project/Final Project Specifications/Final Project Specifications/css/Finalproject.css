@@ -1,0 +1,70 @@
+﻿        *{
+            font-family:Raleway;
+            font-size:100%;
+            color:black;
+        }
+
+        #Home_Logo{
+           
+        }
+
+        #menu{
+            width:80px;
+            height:100%;
+            float: left;
+            position:fixed;
+            border-right-style:groove;
+            border-right-width:2px;
+            background-color:ghostwhite;
+            text-align:center;
+        }
+        #menu_button{
+            font-size:20px;
+            line-height:510px;        
+        }
+
+        #content, #footer{
+            background-color:whitesmoke;
+            width: calc(100% - 160px);
+            height:820px;
+            float:left;
+            text-align:center;
+            margin-left:80px;
+        }
+
+        .conts {
+            position:absolute;
+        }
+
+        .menu_page{
+            width:0px;
+            height:100%;
+            font-size:200%;
+            background-image:url("../image/Menus/Menu2.jpg");
+            border-left-style:groove;
+            border-left:2px;
+            z-index:3;
+        }
+
+        #menu_list{
+            display:none;
+            text-align:center;
+        }
+
+        .conts home{
+            z-index:2;
+        }
+
+
+
+        #footer {
+            height: 20px;
+            background-color: blue;
+        }
+        
+        #navigation {
+            background-color:green;
+            width:80px;
+            height:900px;
+            float:right;
+        }

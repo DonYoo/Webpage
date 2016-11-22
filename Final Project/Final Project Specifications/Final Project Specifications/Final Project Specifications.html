@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>
+        Grandmaster Hong's
+        Worl Class Tae Kwon Do Center
+    </title>
+
+    <!-- You may or not not use jQuery; but, here just to show as example -->
+    <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+    <!-- you can choose another font-family, and even have as many as you design requires. -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css" rel="stylesheet" type="text/css">
+    <link href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Personal links-->
+    <link href="css/Finalproject.css" type="text/css" rel="stylesheet" />
+    <script src="javascript/Home.js"></script>
+</head>
+
+
+<body onload="startTimer()">
+
+    <section>
+        <div id="menu">
+            <img id="Home_Logo" src="image/Menus/logo.png" onclick="">
+            <span id="menu_button" onclick="open_menu()">Menu</span>
+        </div>
+
+        
+
+        <div id="content">
+            <div class="conts menu_page">
+                <div id="menu_list">
+                    <a onclick="hide_main()">About Us</a>
+                    <br />
+                    <a href="Program.JPG">Program</a>
+                    <br />
+                    <a href="image/Menus/Gallery.JPG">Gallery</a>
+                    <p>Community</p>
+                    <a href="Contact.JPG">ContactUs</a>
+                </div>
+            </div>
+
+            <div class="conts home">
+                <h1>Grandmaster Hong's World Class Tae Kwon Do Center</h1>
+
+                <img id="home_img" onclick ="gotoProgram()" src="image/Home_Image/Family.jpg" />
+            </div>
+        </div>
+
+        <div id="navigation">
+            navigation
+            <br /><br />
+            <br /><br />
+            <br /><br />
+            <button type="button" onclick="displayPreviousImage()">Previous</button>
+            <br /><br />
+            <button type="button" onclick="displayNextImage()">Next</button>
+        </div>
+
+        <div id="footer"> this is the footer </div>
+
+    </section>
+
+
+    
+
+</body>
+</html> 

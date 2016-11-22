@@ -1,0 +1,139 @@
+﻿.multi-location-picker{
+    position:absolute;
+    z-index:2002;
+    display:none;
+    overflow-y:auto;
+    padding: 12px 20px 10px 10px;
+    width: 250px;
+    max-height:270px;
+    box-sizing: border-box;
+    background-color: white !important;
+    color:#2b71ad !important;
+    box-shadow: 2px 2px 2px #AAA !important;
+    border:1px solid #c3ddca !important;
+}
+
+#topNav .multi-location-picker{
+    left:-92px !important;
+}
+
+.socialsite-page #topNav .multi-location-picker, .socialsite-object #topNav .multi-location-picker  {
+    top: 23px;
+}
+
+#topNav .t-menu .t-item {
+    min-width: 75px;
+    text-align: right !important;
+    
+}
+
+#spnloc {
+    font-family: arial;
+    font-size: 13px;
+    cursor: pointer !important;    
+}
+
+#topNav .t-link {
+    padding-bottom: 4px;
+}
+
+
+.multi-location-picker ul{
+    list-style-type: none !important;
+}
+
+
+.multi-location-picker {
+    margin-bottom: 10px !important;
+    padding-right: 4px !important;
+}
+
+.multi-location-picker .t-treeview-lines ul{
+    font-weight:normal !important;
+    color:#656565 !important;
+}
+
+.multi-location-picker .t-in{
+ 
+    font-size:12px !important;
+    text-align: left !important;
+}
+
+
+.multi-location-picker .t-checkbox {
+    float: right !important;
+    margin-top: 4px;
+    margin-right:5px;
+    -webkit-logical-height: 10px; /* fix for zooming out */
+}
+
+.multi-location-picker span.t-icon {
+    cursor: pointer !important;
+    float: left !important;
+    height: 16px !important;
+    margin-left: -14px !important;
+    margin-right: 2px !important;
+    width: 10px !important;
+    padding-top: 3px!important;
+
+}
+
+.multi-location-picker .t-icon { 
+    background-image: url(../Content/2012.2.801/Windows7/sprite.png)
+}
+
+.multi-location-picker .t-minus
+{    
+    background-image: url('../Content/Images/LocationPicker/arrow_down.png') !important;
+    background-repeat:no-repeat !important;
+}
+
+.multi-location-picker .t-plus{    
+    background-image: url('../Content/Images/LocationPicker/arrow_right.png') !important;
+    background-repeat:no-repeat !important;
+}
+
+.multi-location-picker .t-minus, .t-minus-disabled {
+    background-position: center center !important;
+}
+
+.multi-location-picker .t-plus, .t-plus-disabled {
+    background-position: center center !important;
+}
+
+.multi-location-picker .t-state-selected {
+    border:1px solid white !important;  
+    color:black !important;
+}
+
+.multi-location-picker .t-state-hover {
+    border-radius: 0px  !important;
+    border-color:white !important;
+    background-color:white !important;
+    color:black !important;
+}
+
+.multi-location-picker .region {
+    font-weight: bold !important;
+}
+
+#spnloc {
+    cursor: pointer !important;
+}
+
+.multi-location-picker .t-group .t-item .t-in
+{
+	max-width: 80% !important;
+	text-overflow: ellipsis !important;
+	overflow: hidden;
+}
+
+.location-picker-button{
+    margin-right: 0; 
+    min-width: 95px;
+}
+
+.location-picker-button .fa-sort-down{
+    vertical-align: top;
+    margin: -1px 0 0 0.5em;
+}

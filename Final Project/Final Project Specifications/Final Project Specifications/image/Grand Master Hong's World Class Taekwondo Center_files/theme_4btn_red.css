@@ -1,0 +1,825 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
+<head><title>
+	
+    
+    
+    Oops... there is a setup problem
+    
+
+</title><meta name="format-detection" content="telephone=no" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"3a4d447407","applicationID":"6666842,6666843,6536002","transactionName":"ZlNQMhAFVxJTV0FcDV8ZfzAhS3YDWFFWQSFeWEYUDQhVBEAbZ1ABXkRWFQ==","queueTime":0,"applicationTime":15,"ttGuid":"81AA7CFC14A108A8","agent":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQYHUF5UDRAGUldUDwUF"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),s.on(m,function(){this.bstStart=Date.now()}),s.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(17)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;c<s;c++)a[c].apply(i,r);var u=f[w[n]];return u&&u.push([v,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",w[n]=e,e in f||(f[e]=[])})}var m={},w={},v={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return v}function i(){return new r}var a="nr@context",s=t("gos"),c=t(15),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(w,function(e,n){t[e]||(t[e]=n)});var n="https"===m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(15),f=window,u=f.document,d="addEventListener",l="attachEvent",p=f.XMLHttpRequest,h=p&&p.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:p,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var m=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},v=p&&h&&h[d]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:v};u[d]?(u[d]("DOMContentLoaded",i,!1),f[d]("load",r,!1)):(u[l]("onreadystatechange",o),f[l]("onload",r)),s("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,10,4,3]);</script><meta name="viewport" content="width=device-width, initial-scale=1.0" />     
+    <link href="/Content/Fonts/FontAwesome/css/font-awesome.min.css?10130837" rel="stylesheet"/>
+<link href="/Content/Fonts/PerfectMind/styles.css?10130837" rel="stylesheet"/>
+<link href="/Content/jQueryUI/ui-lightness/jquery-ui-1.8.17.custom.css?10130837" rel="stylesheet"/>
+<link href="/Content/jQueryContextMenu/jquery.contextMenu.css?10130837" rel="stylesheet"/>
+<link href="/Content/Kendo/kendo.common.min.css?10130837" rel="stylesheet"/>
+<link href="/Content/Kendo/kendo.default.min.css?10130837" rel="stylesheet"/>
+<link href="/Content/Kendo/kendo.bootstrap.min.css?10130837" rel="stylesheet"/>
+<link href="/Scripts/malihuScrollbar/jquery.mCustomScrollbar.css?10130837" rel="stylesheet"/>
+<link href="/Content/TreeView.css?10130837" rel="stylesheet"/>
+<link href="/Content/Kendo/kendo.dataviz.min.css?10130837" rel="stylesheet"/>
+<link href="/Content/lightbox.css?10130837" rel="stylesheet"/>
+<link href="/Content/sitebase1.css?10130837" rel="stylesheet"/>
+<link href="/Content/compass/css/base.css?10130837" rel="stylesheet"/>
+<link href="/Content/2012.2.801/telerik.common.min.css?10130837" rel="stylesheet"/>
+<link href="/Content/2012.2.801/telerik.windows7-grey.min.css?10130837" rel="stylesheet"/>
+
+
+        <!--[if lte IE 7]>
+        <link href="/Content/sitebase-ie7lte.css?10130837" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <!--[if IE]>
+        <link href="/Content/sitebase-ie.css?10130837" rel="stylesheet" type="text/css" />
+        <![endif]-->
+    <link href='http://az12497.vo.msecnd.net/cssroot/ADA1B86D2029C11A7ECBE9BD1EFFF13F1C39418B5C82FA306DBD8B5642C9740B.css' rel='stylesheet' type='text/css' />
+ <script src="//ajax.microsoft.com/ajax/4.0/1/globalization/en-US.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+    var require =
+        {
+            baseUrl: '/Scripts/perfectMind',
+            paths: {
+                "linq": "../linq.min",
+                "knockout": "../knockout-3.3.0",
+                "timepicker": "../jquery.timepicker.min",
+                "PlannerUtility": "planner/PlannerUtility",
+                "CommonBindings": "planner/CommonBindings",
+                "PlannerFilter": "planner/PlannerFilter",
+                "PlannerEvent": "planner/PlannerEvent",
+                "PlannerLoadScheduler": "planner/PlannerLoadScheduler",
+                "PlannerAttendance": "planner/PlannerAttendance",
+                "PerfectScanAutoComplete": "../Attendance/PerfectScanAutoComplete",
+                "ItemDiscountEditViewUI": "discount/ItemDiscountEditViewUI",
+                "ItemDiscountDetailViewUI": "discount/ItemDiscountDetailViewUI",
+                "DiscountEditViewUI": "discount/DiscountEditViewUI",
+                "DiscountDetailViewUI": "discount/DiscountDetailViewUI",
+                "CreditBalance": "contact/CreditBalance",
+                "ContactAlert": "contact/ContactAlert",
+                "PastDueInvoice": "contact/PastDueInvoice",
+                "managePickList": "managePickList",
+                "classPage": "../Attendance/ClassPage",
+                "culture": "../kendo/cultures/kendo.culture.en-US.min",
+                "PlannerEventExtrasEditViewUI": "PlannerEventExtraItem/PlannerEventExtrasEditViewUI",
+                "PlannerEventPaymentPlanEditViewUI": "PlannerEventPaymentPlan/PlannerEventPaymentPlanEditViewUI",
+                "PlannerEventTaxLoader": "PlannerEventTax/PlannerEventTaxLoader",
+                "PlannerEventAdditionalFacilityEditViewUI": "PlannerEventAdditionalFacility/PlannerEventAdditionalFacilityEditViewUI",
+                "ProductEditViewUI": "discount/ProductEditViewUI",
+                "PlannerEventServiceDurationsEditViewUI": "PlannerEventExtraItem/PlannerEventServiceDurationsEditViewUI",
+                "ServiceExtrasEditViewUI": "PlannerEventExtraItem/ServiceExtrasEditViewUI",
+                "ServicePaymentPlanEditViewUi": "PlannerEventPaymentPlan/ServicePaymentPlanEditViewUi",
+                "ServiceDurationsEditViewUI": "Service/ServiceDurationsEditViewUI",
+                "FacilityServiceDurationsEditViewUI": "Service/FacilityServiceDurationsEditViewUI",
+                "FacilityMapEditViewUI" : "FacilityMap/FacilityMapEditViewUI",
+                "FacilityMapAndPinsSelector" : "FacilityMapAndPinsSelector",
+                "UploadImageUtility": "UploadImageUtility",
+                "DeviceEditViewUI": "discount/DeviceEditViewUI",
+                "MonerisPinPad":"MonerisPinPad.js",
+                "PMLocalService":"PMLocalService.js",
+                "RefundForCancellation": "RefundForCancellation",
+                "AgeControl" : "AgeControl",
+                "BookingRestrictionControl" : "BookingRestrictionControl",
+                "ExportSchedule": "ExportSchedule",
+                "SubsidyEditView": "subsidy/SubsidyEditView",
+                "ContactEditView": "contact/ContactEditView",
+                "PaymentPlanEditView": "paymentplan/PaymentPlanEditView",
+                "text": "../requireModules/text",
+                "jQuery.touch": "../jquery.ui.touch"
+        },
+            urlArgs: "v=10130837"
+        };
+
+    document.App = document.App || {};
+    var App = document.App;
+    App.Common = App.Common || {};
+    App.Common.Urls = App.Common.Urls || {};
+    
+    App.Common.Package = App.Common.Package || {};
+    App.Common.Package.isParkAndRecPackage = false;
+
+    App.Common.RegistrationForm  = App.Common.RegistrationForm || {};
+    App.Common.RegistrationForm.TemporaryContactId = "265286d0-751b-403f-888c-33c027f12b01";
+    App.Common.RegistrationForm.TemporaryId = "4b89d23f-81e2-46e4-90fd-8d33e3618992";
+    App.Common.Urls.excludeTemporaryRegistrationForm = "/SocialSite/RegForm/ExcludeTemporaryRegistrationForm";
+
+    App.Common.Store = App.Common.Store || {};
+    App.Common.Store.AddCartToCartButtonId = "fc39c510-3d33-470d-824a-955e06b26299";
+    App.Common.Store.CheckoutButtonId = "9ae80ca9-aeff-4ab0-9de4-2ab27e56113f";
+    App.Common.Store.BuyNowButtonId = "4d826324-4ad4-4a31-9d2d-7ed6d2238d85";
+
+    App.Common.Object = App.Common.Object || {};
+
+    App.Common.Object.CalendarEventObjectId = "6a293c5d-5ea0-d5b9-2ae2-f91bc2069f1b";
+    App.Common.Object.FacilityObjectId = "87665895-0175-4958-bfda-9396c1b5222f";
+    App.Common.Object.ContactObjectId = "88f18a02-bbdd-45b6-9b44-de9ae0ff6500";
+    App.Common.Object.ProductObjectId = "7a20553e-661b-4af1-add5-7d9e460ae1e2";
+    App.Common.Object.ProgramObjectId = "82be1476-8d54-4b27-913e-f966a4848671";
+    App.Common.Object.MembershipObjectId = "8ac96bd2-9550-486b-804e-a40d0c57d6ec";
+
+    App.Common.Urls.getAlerts = "/SocialSite/Alert/GetAlerts";
+    App.Common.Alert = { 
+        isInstalled: true,
+        isEnabled: false,
+        subscribeObjects: [App.Common.Object.FacilityObjectId, App.Common.Object.ContactObjectId, App.Common.Object.ProductObjectId, App.Common.Object.MembershipObjectId]
+    };
+
+</script>  
+   
+
+<script src="/Scripts/es6-promise.min.js?10130837"></script>
+<script src="/Scripts/jQueryCore/jQueryCoreMin.js?10130837"></script>
+<script src="/Scripts/jQueryCore/jquery-migrate-1.2.1.min.js?10130837"></script>
+<script src="/Scripts/perfectMind/PMCommonHeadLoadingFull.js?10130837"></script>
+<script src="/Scripts/Kendo/kendo.PmDialog.js?10130837"></script>
+<script src="/Scripts/Kendo/kendo.pmMultiCalendar.js?10130837"></script>
+<script src="/Scripts/malihuScrollbar/jquery.mCustomScrollbar.concat.min.js?10130837"></script>
+<script src="/Scripts/js.zip.min.js?10130837"></script>
+<script src="/Scripts/perfectMind/formBuilder.js?10130837"></script>
+<script src="/Scripts/linq.min.js?10130837"></script>
+<script src="/Scripts/perfectMind/UploadImageUtility.js?10130837"></script>
+<script src="/Scripts/MicrosoftAjax.debug.js?10130837"></script>
+<script src="/Scripts/MicrosoftMvcAjax.debug.js?10130837"></script>
+<script src="/Scripts/MicrosoftMvcValidation.debug.js?10130837"></script>
+<script src="/Scripts/jQueryPlugin/jQueryHoverIntentFull.js?10130837"></script>
+<script src="/Scripts/jQueryPlugin/jQueryValidateFull.js?10130837"></script>
+<script src="/Scripts/jQueryPlugin/jQueryTimePickerFull.js?10130837"></script>
+<script src="/Scripts/jQueryPlugin/jQueryThreeDotsFull.js?10130837"></script>
+<script src="/Scripts/jQueryPlugin/jQueryContextMenuFull.js?10130837"></script>
+<script src="/Scripts/jQueryPlugin/jQueryFloatingBoxFull.js?10130837"></script>
+<script src="/Scripts/jQueryPlugin/jQueryPlaceholderFull.js?10130837"></script>
+<script src="/Scripts/jQueryPlugin/jquery.elastic.js?10130837"></script>
+<script src="/Scripts/jQueryPlugin/jQueryBbqFull.js?10130837"></script>
+<script src="/Scripts/jQueryPlugin/jQueryPmDialog.js?10130837"></script>
+<script src="/Scripts/jQueryPlugin/jQueryPmEnhancedSelect.js?10130837"></script>
+<script src="/Scripts/jQueryPlugin/jQueryDateTimeAutocompleteFull.js?10130837"></script>
+<script src="/Scripts/jQueryUi/jQueryUi.min.js?10130837"></script>
+<script src="/Scripts/swfobject/swfObjectFull.js?10130837"></script>
+<script src="/Scripts/perfectMind/core.js?10130837"></script>
+<script src="/Scripts/perfectMind/common.js?10130837"></script>
+<script src="/Scripts/customControl/checkbox.js?10130837"></script>
+<script src="/Scripts/customControl/date.js?10130837"></script>
+<script src="/Scripts/customControl/datetime.js?10130837"></script>
+<script src="/Scripts/customControl/html.js?10130837"></script>
+<script src="/Scripts/customControl/address.js?10130837"></script>
+<script src="/Scripts/customControl/youtube.js?10130837"></script>
+<script src="/Scripts/customControl/multilookup.js?10130837"></script>
+<script src="/Scripts/customControl/lookup.js?10130837"></script>
+<script src="/Scripts/customControl/dynamiclookup.js?10130837"></script>
+<script src="/Scripts/customControl/tax.js?10130837"></script>
+<script src="/Scripts/customControl/ajaxLink.js?10130837"></script>
+<script src="/Scripts/customControl/FieldDependencyBuilder.js?10130837"></script>
+<script src="/Scripts/customControl/maskedNumber.js?10130837"></script>
+<script src="/Scripts/customControl/numericInputValidator.js?10130837"></script>
+<script src="/Scripts/customControl/taxableNumbericTextBox.js?10130837"></script>
+<script src="/Scripts/perfectMind/cardView.js?10130837"></script>
+<script src="/Scripts/jQueryPlugin/lightbox.js?10130837"></script>
+<script src="/Scripts/MartialArtsVersion3/PromoteRankByExam.js?10130837"></script>
+<script src="/Scripts/slimScroll/jquery.slimscroll.js?10130837"></script>
+<script src="/Scripts/utils/sessvars.js?10130837"></script>
+<script src="/Scripts/Kendo/kendo.all.min.js?10130837"></script>
+<script src="/Scripts/Kendo/kendo.timezones.js?10130837"></script>
+<script src="/Scripts/Kendo/kendo.aspnetmvc.min.js?10130837"></script>
+<script src="/Scripts/Kendo/kendo.multi.calendar.js?10130837"></script>
+<script src="/Scripts/alerts.js?10130837"></script>
+<script src="/Scripts/require.js?10130837"></script>
+<script src="/Scripts/knockout-3.3.0.js?10130837"></script>
+<script src="/Scripts/LazyLoader.js?10130837"></script>
+<script src="/Scripts/perfectMind/SortTable.js?10130837"></script>
+<script src="/Scripts/knockout-kendo.js?10130837"></script>
+<script src="/Scripts/perfectMind/PMCommonFull.js?10130837"></script>
+
+
+
+<script>
+
+    require(["culture"], function (plannerUtility) {
+        kendo.culture("en-US");
+        __cultureInfo.numberFormat.CurrencySymbol = "$";
+        kendo.culture().numberFormat.currency.symbol = "$";
+    });
+
+</script>
+    
+     
+
+    
+
+    
+
+
+  
+    
+</head>
+<body class="body socialsite-object  " 
+      data-application="SocialSite"
+      data-object=""
+      data-table="">
+    <div style="display: none;">
+        <input type="hidden" id="siteAnchor" value="/" />
+    </div>
+    <div id="ajaxDialogPlaceHolder" style="display: none;"></div>
+    <div id="objectAjaxLoadingOutter" style="display: none;"></div>
+    
+    <form></form>
+    <div id="main-wrapper">        
+          
+    
+    
+   
+	    <div id="header-wrapper">
+	    
+	        
+	         
+            <table id="header-table" cellpadding="0" cellspacing="0">
+                
+                 <tbody>
+                
+                    <tr>
+                        <td rowspan="3" class="header-logo-td">
+                            <div style="table-layout: fixed; min-width: 220px; max-height: 140px; padding-right: 0px; margin-left: 0px; max-width: 300px;" class="Company-logo">
+                                <a href="/" title="Home">
+                                     <img id="Company-Logo-Icon" src="https://az12497.vo.msecnd.net/12d7b87c10024ddc87777b1ad49fbc75/logo/logo1.png" border="0" class="header-logo-icon_Orig"/>
+                                </a>
+                            </div>
+                        </td>
+                        
+                    </tr>
+                     
+                    <tr>
+                        <td colspan="3" class="last-child" id="Td2" style="min-width:750px; width:100%; padding-top: 0; vertical-align: top; white-space: nowrap;">
+
+<div>
+    
+        <div id="topNavRightdiv" style='float: right; height: 100%;'>
+            <div style="position: relative; padding-bottom: 0px;">
+                <div id="topNav">
+                    <ul class="tab" id="no-hover">
+                        
+                        <li>
+                            <a href='/SocialSite/MemberRegistration/MemberSignIn' class="tab">Log in</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="shopCartRightdiv" style="float: right; height: 100%; margin: 0 6px 0 33px;">
+                
+<div id="shopping-cart-icon" class='shopping-cart-icon-hidden' onclick="doCheckoutFromCart();">
+</div>
+<div id="shopping-cart-icon-occupied" class='shopping-cart-icon-hidden' onclick="doCheckoutFromCart();" style="margin:-33px 0 0 -29px">
+    <div id="shopping-cart-item-count" class='shopping-cart-item-count-hidden' style='font-size:9px;'>
+        0
+    </div>
+</div>
+<span id="checkout-label" style="font-size:13px;font-weight:bold;color:#CCCCCC;margin-top:8px;padding-right:4px;" class='checkout-label-hidden' onclick="doCheckoutFromCart()">Checkout</span>
+<div class="tool-tip-message">
+	<span class="tip"></span>
+	<p class="message">There is no item in the cart</p>
+</div>
+
+<script type="text/javascript">
+
+    (function () {
+        window.refreshShoppingCart = function (count) {
+            $("#shopping-cart-item-count").html(count);
+            $("#shopping-cart-icon").attr('class', 'shopping-cart-icon-normal');
+            $("#shopping-cart-icon-occupied").attr('class', 'shopping-cart-icon-normal');
+            $("#shopping-cart-item-count").attr('class', 'shopping-cart-item-count-normal');
+            $("#checkout-label").attr('onclick', 'doCheckoutFromCart()');
+            $("#checkout-label").attr('class', 'checkout-label-show');
+            $("#shopping-cart-icon-occupied").toggle(count > 0);
+        };
+
+        window.clearShoppingCartAsync = function (onSuccess, onFailure) {
+
+            $.ajax({
+                type: "post",
+                url: "/SocialSite/StoreApplication/ClearShoppingCart",
+                dataType: "json",
+                success: function (result) {
+                    if (result && !result.success && onFailure) {
+                        onFailure();
+                    } else {
+                        refreshShoppingCart(0);
+                        if (onSuccess) onSuccess();
+                    }
+                },
+                error: onFailure
+            });
+        };
+
+        // for tablet, click away will hide the tool-tip-message
+        $(document).mouseup(function (e) {
+            var container = $("shopCartRdiv");
+
+            if (!container.is(e.target) // if the target of the click isn't the container...
+            && container.has(e.target).length === 0) // ... nor a descendant of the container
+            {
+                $('.tool-tip-message').hide();
+            }
+        });
+
+        //--------------------------------------------
+        $('#checkout-label, #shopping-cart-icon').mouseout(function () {
+            $('.tool-tip-message').hide();
+        });
+
+        window.doCheckoutFromCart = function (optionalParam) {
+            var url = 'https://www.ritkd.com/SocialSite/StoreApplication/Checkout';
+            url = url + '?goBackUrl=' + escape(window.location);
+            if (optionalParam) {
+                url += optionalParam;
+            }
+            window.location = url;
+        };
+
+        window.loadCartDetails = function () {
+            var detailUrl = '/SocialSite/StoreApplication/CartSummary';
+            $.ajax({
+                url: detailUrl,
+                cache: false,
+                type: "GET"
+            }).done(function (html) {
+                $("#cartDetails").html(html);
+                $("#cartDetailPopup").data("kendoMobileModalView").open();
+            });
+        };
+
+        window.noItemInCart = function (optionalParam) {
+            $('.tool-tip-message').show();
+        };
+
+        window.disableShoppingCart = function () {
+            $("#shopping-cart-icon").removeAttr("onclick");
+            $("#shopping-cart-icon").css("cursor", "default");
+        };
+    }());
+</script>
+            </div>
+            
+        </div>
+        
+            <div style="float: right; height: 100%">
+                
+                <ul id="appNav">
+                    
+                </ul>
+            </div>
+            
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            function closeMenu() {
+                var menu = $("#OptionsSelector").data("tMenu");
+                var item = $("> li", menu.element)[0];
+                menu.close(item);
+            }
+
+            function onOptionsSelectorMenuOpen() {
+                var tMenu = $("#OptionsSelector").data("tMenu");
+                if (tMenu != null) {
+                    tMenu.nextItemZIndex = 1001;
+                }
+
+                if ($("body").hasClass("newKendoMenu")) {
+                    $("#Options-Setup").addClass("expanded");
+                }
+            }
+
+            function onOptionsSelectorMenuClose(e) {
+
+                if ($("body").hasClass("newKendoMenu") && $(e.item).parent().is(".t-widget")) {
+                    $("#Options-Setup").removeClass("expanded");
+                }
+            }
+
+    
+            //]]>
+    $(function () {
+        function ReorderMenuItems() {
+            var menuEl = $('#ApplicationMenu');
+            var menu = menuEl.data('kendoMenu');
+            if (window.reorderingMenu || !menu) return;
+            window.reorderingMenu = true;
+            var menuWidth = 0;
+            var windowWidth = $(window).width();
+
+            var firstLevelItems = $('#ApplicationMenu>li');
+            var moreGroupItems = [];
+            var moreItem = getMoreItem();
+            if (moreItem) {
+                moreGroupItems = $(moreItem).children('li');
+            };
+            var allItems = $.merge(firstLevelItems, moreGroupItems);
+
+            var itemsToMore = [];
+            var itemsFromMore = [];
+            var lastItemSize = $('#appSuiteCell + td').width() + 20;
+
+            // Workaround for BUG-051420: [Mobile] [Book Me] Launch Website menu item should be placed into menu line
+            if (allItems.length <= 3) {
+                return;
+            }
+                
+            $(moreItem).css('min-width', 0);
+            $.each(allItems, function (i, e) {
+                menuWidth += $(e).width();
+                if (menuWidth + 130 + lastItemSize > windowWidth) {
+                    itemsToMore.push(e);
+                } else if (moreGroupItems.length && moreGroupItems.filter(e).length) {
+                    itemsFromMore.push(e);
+                }
+            });
+            $(moreItem).css('min-width', '');
+
+            if (!getMoreItem() && menuWidth + 130 + lastItemSize > $(window).width()) {
+                menu.insertAfter({
+                    text: "More",
+                    cssClass: "more",
+                    items: []
+                },
+                "li:last-child");
+            }
+
+            var rootItemsCount = $('#ApplicationMenu>li').length;
+            moreItem = getMoreItem();
+            $.each(itemsFromMore, function (i, e) {
+                if (rootItemsCount < 6) {
+                    // Change arrow direction for nested menu icon (from right to down). 
+                    $(e).find(".k-link").find(".k-i-arrow-e").removeClass("k-i-arrow-e").addClass("k-i-arrow-s");
+                    $(e).insertBefore(moreItem.closest('li'));
+                    rootItemsCount++;
+                }
+            });
+            
+            if (moreItem) {
+                $.each(itemsToMore, function (i, e) {
+                    if (!$(e).find(moreItem).length) {
+                        // Change arrow direction for nested menu icon (from down to right). 
+                        $(e).find(".k-link").find(".k-i-arrow-s").removeClass("k-i-arrow-s").addClass("k-i-arrow-e");
+                        $(e).appendTo(moreItem);
+                    }
+                });
+                if (!moreItem.find('li').length) {
+                    moreItem.closest('li').remove();
+                }
+                // Workaround for BUG-051500: [Planner] User`s page main menu option "More" is shown not only as main menu option, but also as sub-menus of main menu
+                $('#ApplicationMenu ul .more').remove();
+            }
+
+            delete window.reorderingMenu;
+
+            function getMoreItem() {
+                var firstLevelItems = $('#ApplicationMenu>li');
+                for (var i = 0; i < firstLevelItems.length; i++) {
+                    if ($(firstLevelItems[i]).children('span').text() == "More") {
+                        var moreItem = $(firstLevelItems[i]).children('ul');
+                        return moreItem.length ? moreItem : $(firstLevelItems[i]).children('div').children('ul');
+                    }
+                }
+                return false;
+            }
+        }
+
+        function waitForMenu() {
+            var menu = $('#ApplicationMenu').data('kendoMenu');
+            if (menu) {
+                ReorderMenuItems();
+            } else {
+                setTimeout(waitForMenu, 200);
+            }
+        }
+
+        waitForMenu();
+
+        var delay = (function () {
+            var timer = 0;
+            return function (callback, ms) {
+                clearTimeout(timer);
+                timer = setTimeout(callback, ms);
+            };
+        })();
+
+        $(window).resize(function () {
+            delay(function () {
+                ReorderMenuItems();
+            }, 500);
+        });
+
+
+        //centering logged-in user menu  in case if there is no "Your revards" item.
+        
+        if (!$('li.rewards').length) {
+            $('.header-for-member #topNav #Options-Setup').css('margin-top', '-15px');
+        }
+        
+    });
+
+    $('.header-for-member #ApplicationMenu .k-image').error(function() {
+        $('#ApplicationMenu .k-image:not([src$="Marketing.svg"]').attr('src', '/Content/Images/Menu/MemberMenu/Marketing.svg');
+    });
+
+    $('.header-for-member .member-logged img').error(function () {
+        $(this).attr('src', '/Content/Images/Menu/MemberMenu/MemberIcon.svg');
+    });
+        </script>
+
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td id="appSuiteCell" style="vertical-align:bottom; padding-bottom: 0;">
+                            <div id="appSuiteContainer" style="white-space:nowrap; overflow:hidden;position: relative;">
+<ul id="appsuite-nav"><li>
+            <a class="tab object-tab-link" href="/" title="Home">
+                <img alt="" src="/content/images/ObjectThumbNail/objecticons/homeicon.png"/>Home
+            <span class="arrow bottom"></span></a>
+        </li><li>
+            <a class="tab object-tab-link" href="/SocialSite/Lounge" title="Lounge">
+                <img alt="" src="/content/images/ObjectThumbNail/objecticons/homeicon.png"/>Lounge
+            <span class="arrow bottom"></span></a>
+        </li><li>
+            <a class="tab object-tab-link" href="/SocialSite/about-us" title="About Us">
+                <img alt="" src="/content/images/ObjectThumbNail/objecticons/url-button.png"/>About Us
+            <span class="arrow bottom"></span></a>
+        </li><li>
+            <a class="tab object-tab-link" href="/SocialSite/Membership" title="Memberships">
+                <img alt="" src="/content/images/ObjectThumbNail/objecticons/card%20holder.png"/>Memberships
+            <span class="arrow bottom"></span></a>
+        </li><li>
+            <a class="tab object-tab-link" href="/SocialSite/Album" title="Photos">
+                <img alt="" src="/content/images/ObjectThumbNail/objecticons/youtube-icon.png"/>Photos
+            <span class="arrow bottom"></span></a>
+        </li><li>
+            <a class="tab object-tab-link" href="/SocialSite/contact-us" title="Contact Us">
+                <img alt="" src="/content/images/ObjectThumbNail/objecticons/user%20group.png"/>Contact Us
+            <span class="arrow bottom"></span></a>
+        </li><li id="object-tab-more">
+        <div class="tab">
+            <ul class="t-widget t-reset t-header t-menu" id="ObjectSelector"><li class="t-item t-state-default"><span class="t-link">More<span class="t-icon t-arrow-down"></span></span><ul class="t-group"><li class="t-item t-state-default"><span class="t-link" style="padding-left:10px;vertical-align:middle;">​</span></li></ul></li></ul></div>
+        </li>
+   </ul>
+   <script type="text/javascript">
+       $(".object-tab-link").on('touchstart', function(i) {
+           window.location = $(this).attr("href");
+       });
+
+       function OnOpenMenu(event) {
+           PerfectMind.Layout.DynamicTabs.objectSelectorOnOpen(event);
+           var tMenu = $("#ObjectSelector").data("tMenu");
+
+           if (tMenu != null) {
+               tMenu.nextItemZIndex = 101;
+           }
+       }
+   </script>
+                            </div>
+                        </td>
+                        
+                         <td id="Td6" class="last-child" style="padding-bottom: 0.5em; vertical-align: bottom;">
+                             
+                         </td>
+                         
+                    </tr>
+                </tbody>                
+                
+            </table>
+        
+	    </div>        
+       <div id="ShowGlobalSearchTable" class="hideShowGlobalSearchTable">  
+           
+        </div>
+	    <div id="content-wrapper" class="clearfix"> 
+<script type="text/javascript">
+    //<![CDATA[
+    function hideNotification() {
+        if (typeof (updateButtonsAndMenus) == 'function') {
+            updateButtonsAndMenus();
+        }
+        $('#customButtonNotification_popup').pmKendoDialog("close");
+        $('#customButtonNotification').hide();
+        $('#virtualCodeNotification').pmKendoDialog("close");
+        $.cookie("ConfirmedCookie", null);
+        $("body").removeClass('overflowHidden');
+        $('.notification').pmKendoDialog("close");
+    }
+    function showNotification() {
+    }
+    //]]>
+</script>
+
+ <div id="customButtonNotification" class="error-disabled-msg" style="display:none;">
+                
+    
+    
+
+            </div>
+            <div id="main-content" class="mainMargin"> 
+                
+    
+    
+    <h3 style="text-align: center;">
+        Perfectmind is not setup properly, please contact your administrator
+    </h3>
+    <div style="text-align: center; font-size: 1.2em; height: 4em;">
+        Object [theme_4btn_red.css] does not exist. It could have been renamed or deleted.
+    </div>
+    <div style="display: none" id="errorDetail">
+        G4AspNetClient.Models.Exceptions.PageNotFoundException: Object [theme_4btn_red.css] does not exist. It could have been renamed or deleted.
+   at G4AspNetClient.Controllers.ObjectController.Records(String id, PagerViewModel paging, Nullable`1 viewId, String criteria, DrillDown drillDown, String sortField, Nullable`1 sortAsc, Nullable`1 recordIdMetaData) in C:\TeamCity\buildAgent\work\5ca0b21afda08461\PM2\G4ASPNetClient\Controllers\ObjectController.cs:line 685
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+    </div>
+    <div style="text-align: center; font-size: 1.2em; height: 4em;">
+        &uArr;
+        <a href="/SocialSite">Return Home</a>
+        &nbsp;&nbsp;&nbsp; &lArr;
+        <a href="/SocialSite/Object/Back" onclick="history.back(); return false;">Previous Page</a>
+    </div>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        function doc_keyUp(e) {
+
+            if ((e.keyCode == 123) || (e.keyCode == 122) || (e.keyCode == 121) || (e.keyCode == 120)) {
+                $("#errorDetail").show();
+            }
+        }
+
+        $(document).ready(function() {
+
+            $(document).bind('keyup', doc_keyUp);
+
+        });
+        //]]>
+    </script>
+
+
+
+            </div>
+            <div id="fullContentPopup" class="fullContentPopup">
+                <iframe src="" frameBorder="0"></iframe>
+            </div>
+	    </div>
+	    <div id="push"></div>
+    </div>
+
+    
+    <div id="footer-wrapper">
+<table style="width: 100%">
+    <tr>
+    
+        <td colspan="2" align="left" class="footer-without-content">
+            <div>
+            
+            </div>
+        </td>     
+    </tr>
+    
+    <tr class="powered-by-pm">
+     <td align="left" style="margin:20px; padding:20px;font-size:10px;">
+            Powered by <a href="http://www.perfectmind.com" style="color:inherit;" rel="nofollow">PerfectMIND Business Software</a>
+     </td>              
+    </tr>
+    
+</table>
+
+    </div>
+    <script type="text/javascript" src="/asset.axd?id=ngAAAB-LCAAAAAAABABVzsEKwyAMBuB3yVlsVLoVX2PH0UNxDtpNLZqWQvHdFzwUdsuf74fkhBfY5wkrWHi4PK9UOo1KSy0HVCDg3Tgyk__6PH-kSyGkKJfCmsBiFf8efNwuVXWsowBHrXBQt0z7VNohLuy8VagMDubO0fEv5tbzAJby5usPydub-p4AAAA%3d"></script>
+<script type="text/javascript" src="/Scripts/2012.2.801/telerik.grid.min.js?10130837"></script>
+<script type="text/javascript">
+//<![CDATA[
+jQuery(document).ready(function(){
+jQuery('#ObjectSelector').tMenu({onOpen:OnOpenMenu, onLoad:PerfectMind.Layout.DynamicTabs.resizeTabsBarHeight});});
+//]]>
+</script>
+
+                  
+    <script type="text/javascript">
+        //<![CDATA[
+        var pmUserID = '';
+        var pmContactID = '';
+
+        jQuery(document).ready(function () {
+            $('#ObjectSelector ul').empty(); 
+            PerfectMind.Layout.DynamicTabs.resizeTabsBar();
+
+            var footerWrapperOuterHeight, minWidth, headerMinWidth, mainWrapperMinWidth, headerPadding, moreObjectTab,
+
+                mainWrapper = $("#main-wrapper"),
+                mainContent = $("#main-content"),
+                headerWrapper = $("#header-wrapper"),
+                contentWrapper = $('#content-wrapper'),
+                footerWrapper = $("#footer-wrapper"),
+                dialogOverlayWrapper = $("#pm-dialog-overlay"),
+                companyLogo = document.getElementById("Company-Logo-Icon"),
+                push = $("#push"),
+                headerOuterWidth = headerWrapper.outerWidth(false),
+                footerOuterWidth = footerWrapper.outerWidth(false);
+            leftPanelHeight = $(".left-panel").height();
+            contentWrapper.css("min-height", leftPanelHeight);
+            var maxMenuHeight = $(window).height() - 180;
+            if (maxMenuHeight < 200) {
+                maxMenuHeight = 200;
+            }
+            $('head').append('<style type="text/css" id="dynamicMenuStyleSheet">#newAppSuiteContainer ul .k-group { max-height: ' + maxMenuHeight + 'px !important }</style>');
+
+            if (isTouchDevice()) {
+                $("body").addClass("touch-device");
+            }
+
+            $('input[placeholder],textarea[placeholder]').placeholder();
+            addTooltipsForTouchScreen(".help-icon");
+
+           
+            var latestWidth = null; // Avoid infinite loop in IE8
+            var resizing = false; // Avoid deep recursion in Firefox
+            $(window).resize(function () {
+                if (!resizing) {
+                    resizing = true;
+                    if (dialogOverlayWrapper.width() < contentWrapper.width()) dialogOverlayWrapper.width(contentWrapper.width());
+                    
+                    var width = Math.max($(window).width(), minWidth || 0) + "px";
+                    if (latestWidth !== width) {
+                        latestWidth = width;
+                        PerfectMind.Layout.DynamicTabs.resizeTabsBar();
+                    }
+                    maxMenuHeight = $(window).height() - 180;
+                    if (maxMenuHeight < 200) {
+                        maxMenuHeight = 200;
+                    }
+                    $('#dynamicMenuStyleSheet').text('#newAppSuiteContainer ul .k-group { max-height: ' + maxMenuHeight + 'px !important }');
+                    resizing = false;
+                }
+            });
+
+            var computeMinWidth = function () {
+                var logoElement;
+                headerPadding = headerWrapper.outerWidth(false) - headerWrapper.width();
+                logoElement = $(".header-logo-td");
+                if (logoElement == null) logoElement = $("Default-Logo-Icon-background");
+                headerMinWidth = logoElement.outerWidth(false)
+                    + $(".search-box").outerWidth(false)
+                    + headerPadding;
+
+                PerfectMind.Layout.DynamicTabs.resizeTabsBar();
+            };
+            
+            var contentHeight = $(window).height() - $("#footer-wrapper:visible").outerHeight();
+            $("#main-wrapper").css("min-height", contentHeight);
+
+            // if the image is cached or we use the default logo .load isn't fired
+            if (companyLogo == null || companyLogo.complete || companyLogo.readyState === 4) {
+                computeMinWidth();
+                if (typeof resizeCustomButtonContainer !== 'undefined') resizeCustomButtonContainer();
+            } else {
+                $(companyLogo).load(function (event) {
+                    computeMinWidth();
+                    if (typeof resizeCustomButtonContainer !== 'undefined') resizeCustomButtonContainer();
+                });
+            }
+
+            
+        });
+        //]]>
+    </script>
+    <script type="text/javascript">
+
+        $('#global-search-submit-button-main').click(function (event) {
+            event.stopPropagation();
+            var searchHeight = $("#header-wrapper").height();
+            $('#ShowGlobalSearchTable').toggle();
+            $('#global-search-criteria').focus();
+            $("#ShowGlobalSearchTable").css("top", searchHeight);
+        });
+
+        $(document).click(function (event) {
+            var container = $("#ShowGlobalSearchTable");
+            var btn = $("#global-search-submit-button-main");
+
+            if (container.has(event.target).length == 0 && btn.has(event.target).length == 0) {
+                container.hide();
+            }
+        });
+    </script> 
+    
+    
+
+</body>
+</html>
