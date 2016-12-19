@@ -7,7 +7,7 @@
 
     <title>
         Grandmaster Hong's
-        Worl Class Tae Kwon Do Center
+        World Class Tae Kwon Do Center
     </title>
 
     <!-- You may or not not use jQuery; but, here just to show as example -->
@@ -18,57 +18,419 @@
     <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
     <link href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css" rel="stylesheet" type="text/css">
     <link href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css" rel="stylesheet" type="text/css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Personal links-->
     <link href="css/Finalproject.css" type="text/css" rel="stylesheet" />
+    <link href="css/marketing.css" type="text/css" rel="stylesheet" />
     <script src="javascript/Home.js"></script>
 </head>
 
 
-<body onload="startTimer()">
+<body>
 
     <section>
-        <div id="menu">
-            <img id="Home_Logo" src="image/Menus/logo.png" onclick="">
-            <span id="menu_button" onclick="open_menu()">Menu</span>
+        <img id="Home_Logo" src="image/Menus/logo.png" onclick="goto_home()">
+
+        <div id="menu" onclick="open_menu()">
+            <div id="menu_button">Menu</div>
         </div>
 
-        
+        <div class="menu_page">
+            <div id="menu_list">
+                <a onclick="goto_AboutUs()">About Us</a>
+                <br />
+                <a onclick="goto_Program()">Program</a>
+                <br />
+                <!--
+                <a href="image/Menus/Gallery.JPG">Gallery</a>
+                <br />
+                        -->
+                <a onclick="goto_ContactUs()">Contact Us</a>
+            </div>
+        </div>
 
-        <div id="content">
-            <div class="conts menu_page">
-                <div id="menu_list">
-                    <a onclick="hide_main()">About Us</a>
-                    <br />
-                    <a href="Program.JPG">Program</a>
-                    <br />
-                    <a href="image/Menus/Gallery.JPG">Gallery</a>
-                    <p>Community</p>
-                    <a href="Contact.JPG">ContactUs</a>
+        <div class="conts home">
+            <h1 style="margin-bottom:100px">Grandmaster Hong's<br /> World Class Tae Kwon Do Center</h1>
+
+            <img id="home_img" onclick ="gotoProgram()" src="image/Home_Image/Family.jpg" />
+        </div>
+
+        <div class="conts AboutUs">
+                <h1 class="First_header">Learn about our instructors!</h1>
+                
+                <div class="Boxing">
+                    <p>
+                        <span class="Sub_header">Grandmaster Hong</span>
+                    </p>
+                    <img class="img-AboutUs" src="Image/AboutUs/Hong.jpg">
+
+                    <p >
+                        <strong>Grand Master Jin R. Hong</strong>,a 9th Dan black belt in Taekwondo, has more than 40 years of experience in martial arts training. An internationally certified referee and a Group A member of both the US Olympic Committee and Pan-American Games, he also hosts his annual Rhode Island Open tournament. After arriving in the United States in 1982, Grand Master Hong opened his first school, focusing his teachings on both traditional and Olympic styles. The following year, he founded the Taekwondo Club of Brown University, which he also taught for the next twenty years. In 1993, he opened another school, continuing to teach students the vast benefits of Taekwondo. The accolates that Grand Master Hong has received are not only numerous, but also very well deserved. He has been awarded as one of the top ten grand masters in in the United States. His teachings have given rise to over one thousand black belts, some of whom have gone on to become masters or instructors, teaching students in the ways that they had first learned. Grand Master Hong's philosophy is that Taekwondo is much more than self-defense. He teaches that its foundation is about mental discipline, confidence, balance, and harmony. Gaining strength and energy in these qualities will not only make one a good student, but also a better person in life.
+                    </p>
+                </div>
+
+                <h1 class="First_header">Our Instructors!</h1>
+
+                <div class="Boxing">
+                    <p>
+                        <span class="Sub_header">Master Louis Alfonso</span>
+                    </p>
+                    <img class="img-AboutUs" src="Image/AboutUs/Louis.jpg">
+
+                    <p>
+                        A student of Grand Master Hong for 20+ years, 5th Dan <strong>Master Louis Alfonso</strong>, Ph.D. has been educating students for 13 of those years, mainly with children, family, and adult classes. A certified referee of the United States Taekwondo Association, Master Alfonso is Professor Emeritus of Foundations of Education at Rhode Island College. As a teacher, he enjoys seeing how Taekwondo has helped students to mature not only in their abilities, but also as persons.
+                    </p>
+                </div>
+
+                <div class="Boxing">
+                    <p>
+                        <span class="Sub_header">Master YungJin Jin</span>
+                    </p>
+                    <img class="img-AboutUs" src="Image/AboutUs/YungJin.jpg">
+
+                    <p>
+                        A 4th Dan Master originally from Korea, <strong>Jin Yung Jin</strong> has been guiding students in their training for 20+ years, and has shown a great ability in focusing students to the finer points of the class curriculum. Teaching primarily family and adult classes, Master Jin finds that one of the most endearing qualities is to teach students not just have respect for others, but also to show the same amount of that respect in themselves and their abilities.
+                    </p>
+                </div>
+
+                <div class="Boxing">
+                    <p>
+                        <span class="Sub_header">David DeSisto</span>
+                    </p>
+
+                    <p>
+                        Training under Grand Master Hong for 16 years, Instructor <strong>David DeSisto</strong> has risen to the rank of 4th Dan, continuing to teach students of the Little Tigers and Family classes for 11 of those years. Holding a Bachelor's Degree in Computer Science from Rhode Island College, Instructor DeSisto's focus on student confidence is one of many attributes that make him such an excellent teacher.
+                    </p>
                 </div>
             </div>
 
-            <div class="conts home">
-                <h1>Grandmaster Hong's World Class Tae Kwon Do Center</h1>
+        <div class="Programs">
+            <div class="conts Program_List">
+                <h1 class="First_header">Grandmaster Hong's Programs</h1>
+                
+                <div class="content">
+                    <h2 class="content-head is-center">Class Schedule</h2>
+                    <div class="pure-g">
+                        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                            <h3 onclick="gotoProgram(0)" class="content-subhead">
+                                <i class="fa fa-rocket"></i>
+                                Family Class
+                            </h3>
+                            <p>
+                                As a parent, you can set an invaluable example for your child about the importance of regular exercise. Taekwondo combines the best of several forms of physical training. Stretching and calisthenics will improve your flexibility and balance. 
+                            </p>
+                        </div>
+                        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                            <h3 onclick="gotoProgram(1)" class="content-subhead">
+                                <i class="fa fa-mobile"></i>
+                                Children Class
+                            </h3>
+                            <p>
+                                Teachers and parents alike often notice a dramatic difference in children who study the martial arts. Teaching kids to stay focused is one of our specialties and the results are noticeable. Children listen better at home, handle homework and chores more efficiently, put more focus and effort into schoolwork, and receive better grades.
+                            </p>
+                        </div>
+                        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                            <h3 onclick="gotoProgram(2)" class="content-subhead">
+                                <i class="fa fa-th-large"></i>
+                                Teen Class
+                            </h3>
+                            <p>
+                                As you practice Taekwondo you'll not only be improving your fitness level, but learning a highly effective form of self-defense as well. Taekwondo can provide you with the presence of mind, awareness, and physical readiness that will give you options in a confrontational situation. 
+                            </p>
+                        </div>
+                        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                            <h3 onclick="gotoProgram(3)" class="content-subhead">
+                                <i class="fa fa-check-square-o"></i>
+                                Adult Class
+                            </h3>
+                            <p>
+                                Students enjoy training Taekwondo for years, not months. Every class is a complete workout designed to improve your flexibility, balance, endurance and strength. With regular training you will lose weight, gain muscle tone and improve your athletic performance for other sports.
+                            </p>
+                        </div>
+                        <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                            <h3 onclick="gotoProgram(4)" class="content-subhead">
+                                <i class="fa fa-check-square-o"></i>
+                                Event
+                            </h3>
+                            <p>
+                                Event
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-                <img id="home_img" onclick ="gotoProgram()" src="image/Home_Image/Family.jpg" />
+            </div>
+
+            <div class="conts Family_Program">
+
+                <h1 class="First_header">Family Self Defense & Fitness</h1>
+
+                <img id="home_img" src="image/Home_Image/Family.jpg" />
+
+                <div class="Boxing">
+                   
+                    <p>
+                        <span class="Sub_header">Can I take classes with my child?</span>
+                    </p>
+
+                    <p >
+                        Yes. In fact, many families are finding Tae Kwon Do to be the perfect family activity, combining an exciting workout with a new learning experience. You have your choice of attending children's and adults' classes individually or coming together to our Family Class. Either way you'll have a great time and create a special family bond.
+                    </p>
+                    <p>
+                        <span class="Sub_header">Taekwondo will give you:</span>
+                    </p>
+
+                    <p>
+                        A way to bring your family closer together
+
+                        A rewarding activity your whole family will enjoy
+
+                        A way to find exercise time for both you and your children
+
+                        A positive environment surrounded by motivated goal-setters
+
+                        It is unlikely that your child can attend a health club with you. And you would probably feel a little out of place if you joined in with your son or daughter's soccer team. Yet at Taekwondo, every family member can train together side by side, providing you with shared goals, quality family time, and an opportunity to meet a great group of friendly people. Of course, you'll also have a lot of fun as you improve your fitness, gain self-defense skills and learn the exciting martial art of Taekwondo. You can be confident that you and your family will be developing relationships with sincere, motivated, healthy families.
+                    </p>
+                    <p>
+                        <span class="Sub_header">Family fitness.</span>
+                    </p>
+
+                    <p>
+                        As a parent, you can set an invaluable example for your child about the importance of regular exercise. Taekwondo combines the best of several forms of physical training. Stretching and calisthenics will improve your flexibility and balance. Kicking drills and partner work will improve your endurance and timing, and the different forms and curriculum requirements will improve your strength and muscle tone. Taekwondo is a great chance to gain respect for each family member's abilities and an opportunity to learn from one another. Best of all, no two classes are alike. You and your children will appreciate the varied, high-energy workouts and be motivated to attend lessons often.
+                    </p>
+                </div>
+            </div>
+
+            <div class="conts Children_Program">
+
+                <h1 class="First_header">Children's Programs</h1>
+
+                <img id="home_img" src="image/Home_Image/Children.jpg" />
+
+                <div class="Boxing">
+                    
+                    <p>
+                        <span class="Sub_header">At what age can children start?</span>
+                    </p>
+
+                    <p>
+                        Our experience has shown that children ages four and up will be able to take the greatest advantage from Tae Kwon Do classes. Starting at age four, your child can participate in our trial lesson program, which allows our instructors to work with them one on one and evaluate their readiness for group classes. Our staff will then use their experience to recommend the best course of action for you and your child.
+                    </p>
+                    <p>
+                        <span class="Sub_header">Your child will:</span>
+                    </p>
+
+                    <p>
+                        Become more fit, energetic, and active
+
+                        Learn the importance of treating others with respect
+
+                        Learn the value of self-control and the power of cooperation
+
+                        Gain the ability to set and achieve goals
+
+                        Learn to persevere and not give up when faced with challenges
+
+                        As a student of Taekwondo, your child will experience more than just self-defense. They will experience self-improvement. Virtually every area of their life can be affected in a positive way through Taekwondo training. Taekwondo will improve your child’s fitness, increase their self-esteem, and sharpen their focus in such a powerful way that it will benefit them throughout their life.
+                    </p>
+                    <p>
+                        <span class="Sub_header">Taekwondo is great for physical fitness:</span>
+                    </p>
+
+                    <p>
+                        Students enjoy training Taekwondo for years, not months. Every class is a complete workout designed to improve your flexibility, balance, endurance and strength. With regular training you will lose weight, gain muscle tone and improve your athletic performance for other sports.
+                    </p>
+                </div>
+            </div>
+
+            <div class="conts Teen_Program">
+
+                <h1 class="First_header">Teens Self Defense & Fitness</h1>
+
+                <img id="home_img" src="image/Home_Image/Teens.jpg" />
+
+                <div class="Boxing">
+                    
+                    <p>
+                        <span class="Sub_header">What if I never did it before or if I'm out of shape?</span>
+                    </p>
+
+                    <p>
+                        At Grandmaster Hong's World Class Taekwondo, we have ongoing enrollment, so beginners are always welcome. Our special trial program makes it easy for new students of all fitness levels to get started. First time students receive one-on-one instruction designed to answer common questions and provide an introduction to the basics of Tae Kwon Do. In addition, the belt system used in Tae Kwon Do allows all students to train at their own pace and improve their physical condition gradually.
+                    </p>
+                    <p>
+                        <span class="Sub_header">Taekwondo classes are full of variety:</span>
+                    </p>
+
+                    <p>
+                        Students enjoy training Taekwondo for years, not months. Every class is a complete workout designed to improve your flexibility, balance, endurance and strength. With regular training you will lose weight, gain muscle tone and improve your athletic performance for other sports.
+
+                        Through Taekwondo you will:
+
+                        Improve your health
+
+                        Reduce your stress
+
+                        Increase your confidence
+
+                        Learn a highly effective form of self defense
+
+                        Positively affect every aspect of your life
+                    </p>
+                    <p>
+                        <span class="Sub_header">Learn powerful self-defense techniques:</span>
+                    </p>
+
+                    <p>
+                        As you practice Taekwondo you'll not only be improving your fitness level, but learning a highly effective form of self-defense as well. Taekwondo can provide you with the presence of mind, awareness, and physical readiness that will give you options in a confrontational situation. Criminals often seek out those who "look like a victim." Training in Taekwondo is also a preventive self-defense method. It will improve your physical condition, posture, eye contact, and awareness. By allowing you to carry yourself with an aura of strength and self-confidence, Taekwondo can help prevent a confrontation from ever happening.
+                    </p>
+                </div>
+            </div>
+
+            <div class="conts Adult_Program">
+
+                <h1 class="First_header">Adult Self-Defense And Fitness</h1>
+
+                <img id="home_img" src="image/Home_Image/Adult.jpg" />
+
+                <div class="Boxing">
+                   
+                    <p>
+                        <span class="Sub_header">Our workout is perfect for anyone who has:</span>
+                    </p>
+
+                    <p>
+                        Joined and quit a health club
+
+                        Tried to lose weight but is not interested in the gym scene
+
+                        Become bored of traditional exercise (lifting weights, running)
+
+                        Been looking for a new challenge
+
+                        The only way that any exercise program works is if you are able to stick with it. The reason most people drop their exercise routine, whether it's going to the gym or working out at home, is that they get bored. The monotony and repetition in traditional forms of exercise turns many people off after just a few months.
+                    </p>
+                    <p>
+                        <span class="Sub_header">Taekwondo classes are full of variety:</span>
+                    </p>
+
+                    <p>
+                        Students enjoy training Taekwondo for years, not months. Every class is a complete workout designed to improve your flexibility, balance, endurance and strength. With regular training you will lose weight, gain muscle tone and improve your athletic performance for other sports.
+                    </p>
+                    <p>
+                        <span class="Sub_header">Through Taekwondo you will:</span>
+                    </p>
+
+                    <p>
+                        As you practice Taekwondo you'll not only be improving your fitness level, but learning a highly effective form of self-defense as well. Taekwondo can provide you with the presence of mind, awareness, and physical readiness that will give you options in a confrontational situation. Criminals often seek out those who "look like a victim." Training in Taekwondo is also a preventive self-defense method. It will improve your physical condition, posture, eye contact, and awareness. By allowing you to carry yourself with an aura of strength and self-confidence, Taekwondo can help prevent a confrontation from ever happening.
+                    </p>
+                </div>
+            </div>
+
+            <div class="conts Event_Program">
+
+                <h1 class="First_header">After School Program</h1>
+
+                <img id="home_img" src="image/Home_Image/Event.jpg" />
+
+                <div class="Boxing">
+                   
+                </div>
             </div>
         </div>
 
+
+
+        <div class="conts ContactUs">
+            <h1 class="First_header">Contact Us</h1>
+
+            <div class="content">        
+                <div class="pure-g">
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                        <h3 class="content-subhead">
+                            
+                            Address:
+                        </h3>
+
+                        <p>
+                            5955 Post Road North Kingstown, RI 02852
+                        </p>
+                        <h3 class="content-subhead">
+                            
+                            Phone:
+                        </h3>
+                        <p>
+                            (401) 885 4900
+                        </p>
+                        <h3 class="content-subhead">
+                           
+                            E-mail:
+                        </h3>
+                        <p>
+                            <a href="mailto:hongsritkd@gmail.com?">hongsritkd@gmail.com</a>
+                        </p>
+                    </div>
+                    
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-3-4">
+                        <h3 class="content-subhead">
+                            <i class="fa fa-mobile"></i>
+                            Location:
+                        </h3>
+                        <p>
+                            <iframe id="google-map" scrolling="no" frameborder="0" src="https://maps.google.ca/maps?f=q&source=s_q&hl=en&geocode=&q=Grand+Maste…r=&ll=41.646941,-71.469584&spn=0.022448,0.036478&z=14&iwloc=A&output=embed"></iframe>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
         <div id="navigation">
-            navigation
-            <br /><br />
-            <br /><br />
-            <br /><br />
-            <button type="button" onclick="displayPreviousImage()">Previous</button>
+            <button id="navi_button" type="button" onclick="displayPreviousImage()">Previous</button>
             <br /><br />
             <button type="button" onclick="displayNextImage()">Next</button>
         </div>
 
-        <div id="footer"> this is the footer </div>
+        <div class="footer">
+            <div id="foot_left">
+                5955 Post Road<br />
+                North Kingstown<br />
+                RI 02852
+            </div>
+            <div id="foot_center">
+                <p>
+                    Email:
+                    <a href="mailto:hongsritkd@gmail.com?">hongsritkd@gmail.com</a><br />
+                </p>
+                Telephone: (401) 885 4900
+            </div>
+            <div id="foot_right">
+                <a target="_blank" href="https://www.facebook.com/GrandmasterHongsTaekwondo">
+                    <img src="image/Footer/fb.png" />
+                </a>
+                <a target="_blank" href="https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.ritkd.com%2F%23.WEbAO-iOl1E.twitter+%28from+%40perfectmind.com%29">
+                    <img src="image/Footer/twitter.png" />
+                </a>
+                <a target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.ritkd.com%2F%23.WEbAIUn2MsE.google_plusone_share&t=Grand+Master+Hong%27s+World+Class+Taekwondo+Center">
+                    <img src="image/Footer/google.png" />
+                </a>
+                <a target="_blank" href="https://www.youtube.com/user/MasterChongsTKD">
+                    <img src="image/Footer/youtube.png" />
+                </a>
+            </div>
+        </div>
 
-    </section>
+</section>
 
 
     

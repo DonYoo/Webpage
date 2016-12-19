@@ -81,6 +81,15 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\Image.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Image\AboutUs\Hong.jpg" />
+    <Content Include="Image\AboutUs\Louis.jpg" />
+    <Content Include="Image\AboutUs\YungJin.jpg" />
+    <Content Include="Image\Footer\fb.png" />
+    <Content Include="Image\Footer\google.png" />
+    <Content Include="Image\Footer\twitter.png" />
+    <Content Include="Image\Footer\youtube.png" />
     <Content Include="Image\Home_Image\Event.jpg" />
     <Content Include="Image\Home_Image\Family.jpg" />
     <Content Include="Image\Home_Image\Children.jpg" />
@@ -95,7 +104,11 @@
     <Content Include="Image\Menus\logo.png" />
     <Content Include="Image\Menus\Menu2.jpg" />
     <Content Include="Image\Menus\Program.JPG" />
+    <Content Include="Image\Video\adidas Combat Sports - Taekwondo.mp4" />
+    <Content Include="index.html" />
     <Content Include="javascript\Home.js" />
+    <Content Include="javascript\index.js" />
+    <Content Include="css\marketing.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
