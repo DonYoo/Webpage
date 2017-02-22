@@ -1,0 +1,12 @@
+if we want to prevent the changes done by the suer on the object,
+we have to edit the object properties.
+
+var data = {};
+Object.definePrperty(data, 'id',{
+value :2,
+wirtable :false   // this will prevent change the value.
+enumerable : true,
+configurable:false
+});
+
+or use object.freeze(); to prevent altar and add/delete the file.
