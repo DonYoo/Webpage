@@ -15,8 +15,11 @@ var readMessage = function(client) {
 			client.write(line);
 			if (line == "bye")
 				client.end();
-			else
-				readMessage(client);
+			else{
+				setTimeout(function() {
+					readMessage(client);
+				}, 1000);
+			}
 	});
 };
 

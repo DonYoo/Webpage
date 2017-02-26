@@ -18,6 +18,7 @@ var data = [
 module.exports = {
     lookupById: function (id) {
         //findWhere : Looks through the list and returns the first value that matches all of the key-value pairs listed in properties.
+        id = parseInt(id);
         var employee = _.findWhere(data, {id: id});
         return (employee == null) ? undefined : employee;
     },

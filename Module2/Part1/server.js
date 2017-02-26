@@ -48,7 +48,7 @@ var server = net.createServer(
 			}
 			else if(command=="lookupById"){
 				try{
-					socket.write(JSON.stringify(foo.lookupById(parseInt(name1))));
+					socket.write(JSON.stringify(foo.lookupById(name1)));
 				}
 				catch(error){
 					socket.write(error.message);

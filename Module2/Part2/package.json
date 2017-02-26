@@ -1,0 +1,17 @@
+{
+  "name": "module2",
+  "version": "1.0.0",
+  "description": "express, handlebars, rest",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Don Yoo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "underscore": "^1.8.3"
+  }
+}

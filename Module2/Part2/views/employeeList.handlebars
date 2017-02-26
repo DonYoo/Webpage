@@ -1,0 +1,28 @@
+	<b>Employees with Last Name {{Lname}}</b>
+<hr/>
+	<table border='1'>
+	<tr>
+	 <td valign="top">
+	  <label for="id">Id</label>
+	 </td>
+	 <td valign="top">
+	  <label for="Fname">First Name</label>
+	 </td>
+     <td valign="top">
+	  <label for="Lname">Last Name</label>
+	 </td>
+    {{#each employeeList}}
+    </tr>
+        <tr>
+        <td valign="top">
+        <p>{{this.id}}</p>
+        </td>
+        <td valign="top">
+        <p>{{this.firstName}}</p>
+        </td>
+        <td valign="top">
+        <p>{{this.lastName}}</p>
+        </td>
+    </tr>  
+    {{/each}}
+ </table>

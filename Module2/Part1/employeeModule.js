@@ -17,6 +17,7 @@ var data = [
 
 module.exports = {
     lookupById: function (id) {
+        // change the id type to int
         id = parseInt(id);
         //findWhere : Looks through the list and returns the first value that matches all of the key-value pairs listed in properties.
         var employee = _.findWhere(data, {id: id});
@@ -37,7 +38,8 @@ module.exports = {
 
     addEmployee: function (firstName, lastName) {
         // the id value should be calculated as one more than max id.
-        var newData = { id: data.length + 1, firstName: firstName, lastName: lastName};
+        var newData = { id: _.max(_.pluck(data, 'id'))+1, firstName: firstName, lastName: lastName};
         data.push(newData);
+        return newData.id;
     }
 };
